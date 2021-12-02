@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="1124.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainController">
+    
+ <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="MULTIPLY" height="49.0" stroke="BLACK" strokeType="INSIDE" width="1124.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1879d3" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="8.0" layoutY="10.0" prefHeight="30.0" prefWidth="443.0" text="Global Consulting Scheduling Software" textFill="#1a2151e8">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Label>
+      <Pane layoutY="49.0" prefHeight="342.0" prefWidth="475.0" style="-fx-border-color: grey;">
+         <children>
+            <Button layoutX="283.0" layoutY="302.0" mnemonicParsing="false" onAction="#UpdateCustomer" prefHeight="32.0" prefWidth="89.0" text="Update" />
+            <Button layoutX="186.0" layoutY="302.0" mnemonicParsing="false" onAction="#AddCustomer" prefHeight="32.0" prefWidth="89.0" text="Add" />
+            <Button layoutX="382.0" layoutY="302.0" mnemonicParsing="false" onAction="#DeleteCustomer" prefHeight="32.0" prefWidth="89.0" text="Delete" />
+            <Label layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="80.0" text="Customers">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <TableView fx:id="MainCustomersTable" layoutX="5.0" layoutY="31.0" prefHeight="254.0" prefWidth="466.0">
+              <columns>
+                <TableColumn fx:id="MainCustomerID" prefWidth="41.0" text="ID" />
+                <TableColumn fx:id="MainCustomerName" prefWidth="101.0" text="Name" />
+                <TableColumn fx:id="MainCustomerPhone" minWidth="0.0" prefWidth="116.0" text="Phone Number" />
+                <TableColumn fx:id="MainCustomerAddress" prefWidth="118.0" text="Address" />
+                <TableColumn fx:id="MainCustomerCity" prefWidth="89.0" text="City" />
+              </columns>
+            </TableView>
+            <TextField fx:id="MainCustomerSearch" onKeyReleased="#searchCustomers" layoutX="314.0" layoutY="3.0" prefHeight="25.0" prefWidth="157.0" promptText="Search by Name" />
+         </children>
+      </Pane>
+      <Pane layoutX="475.0" layoutY="49.0" prefHeight="342.0" prefWidth="649.0" style="-fx-border-color: grey;">
+         <children>
+            <Button layoutX="448.0" layoutY="303.0" mnemonicParsing="false" onAction="#UpdateApt" prefHeight="32.0" prefWidth="89.0" text="Update" />
+            <Button layoutX="350.0" layoutY="303.0" mnemonicParsing="false" onAction="#AddApt" prefHeight="32.0" prefWidth="89.0" text="Add" />
+            <Button layoutX="546.0" layoutY="303.0" mnemonicParsing="false" onAction="#DeleteApt" prefHeight="32.0" prefWidth="89.0" text="Delete" />
+            <Label layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="123.0" text="Appointments">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <TabPane layoutX="5.0" layoutY="30.0" prefHeight="267.0" prefWidth="641.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="All">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="AllAptTable" layoutY="6.0" prefHeight="226.0" prefWidth="641.0">
+                                 <columns>
+                                     <TableColumn fx:id="AllAptID" prefWidth="64.0" text="Apt ID" />
+                                    <TableColumn fx:id="AllClientID" prefWidth="77.0" text="Client ID" />
+                                    <TableColumn fx:id="AllLocation" prefWidth="159.0" text="Location" />
+                                    <TableColumn fx:id="AllStartTime" minWidth="0.0" prefWidth="172.0" text="Start Time" />
+                                    <TableColumn fx:id="AllEndTime" minWidth="0.0" prefWidth="168.0" text="End Time" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Month">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="MonthAptTable" layoutX="-1.0" layoutY="-1.0" prefHeight="226.0" prefWidth="641.0">
+                                 <columns>                                  
+                                    <TableColumn fx:id="MonthAptID" prefWidth="64.0" text="Apt ID" />
+                                    <TableColumn fx:id="MonthClientID" prefWidth="77.0" text="Client ID" />
+                                    <TableColumn fx:id="MonthLocation" prefWidth="159.0" text="Location" />
+                                    <TableColumn fx:id="MonthStartTime" minWidth="0.0" prefWidth="172.0" text="Start Time" />
+                                    <TableColumn fx:id="MonthEndTime" minWidth="0.0" prefWidth="168.0" text="End Time" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Week">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="WeekAptTable" layoutX="-1.0" layoutY="-1.0" prefHeight="226.0" prefWidth="641.0">
+                                 <columns>                                  
+                                    <TableColumn fx:id="WeekAptID" prefWidth="64.0" text="Apt ID" />
+                                    <TableColumn fx:id="WeekClientID" prefWidth="77.0" text="Client ID" />
+                                    <TableColumn fx:id="WeekLocation" prefWidth="159.0" text="Location" />
+                                    <TableColumn fx:id="WeekStartTime" minWidth="0.0" prefWidth="172.0" text="Start Time" />
+                                    <TableColumn fx:id="WeekEndTime" minWidth="0.0" prefWidth="168.0" text="End Time" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Button layoutX="14.0" layoutY="303.0" mnemonicParsing="false" onAction="#Reports" prefHeight="32.0" prefWidth="89.0" text="Reports" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

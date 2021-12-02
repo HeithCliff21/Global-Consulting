@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/View_Controller/AddCustomerController.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>135</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/Appointment.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/UpdateApt.fxml</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/LoginController.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/Customer.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/time/management/TimeManagement.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/AddAptController.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/CustomerTable.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/User.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Support%20Doc/READ%20ME.txt</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/UpdateAptController.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/MainController.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/AddCustomerController.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/Main.fxml</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/Login.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/ReportController.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Languages/Login_no.properties</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/City.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Languages/Login_en.properties</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/Address.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/View_Controller/AddApt.fxml</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/DataBase.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Model/Country.java</file>
+            <file>file:/C:/School/C195/Time%20Management/src/Languages/Login.properties</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddAptController">
+        <children>
+      <Label layoutX="16.0" layoutY="14.0" prefHeight="27.0" prefWidth="171.0" text="New Appointment">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="51.0" prefHeight="21.0" prefWidth="101.0" text="Clients Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="171.0" text="Date">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="171.0" prefHeight="21.0" prefWidth="79.0" text="Start Time">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="171.0" prefHeight="21.0" prefWidth="79.0" text="End Time">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="111.0" prefHeight="21.0" prefWidth="174.0" text="Appointment Type">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="111.0" prefHeight="21.0" prefWidth="79.0" text="Location">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="282.0" prefHeight="21.0" prefWidth="79.0" text="URL">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="393.0" prefHeight="21.0" prefWidth="101.0" text="Description">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="225.0" prefHeight="21.0" prefWidth="101.0" text="Contact">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newaptClientName" editable="false" layoutX="16.0" layoutY="72.0" prefHeight="25.0" prefWidth="334.0" promptText="Clients Name" />
+      <ComboBox fx:id="newaptAppointmentType" layoutX="16.0" layoutY="132.0" prefHeight="25.0" prefWidth="171.0" />
+      <ComboBox fx:id="newaptLocation" layoutX="205.0" layoutY="132.0" prefHeight="25.0" prefWidth="146.0" />
+      <DatePicker fx:id="newaptDate" editable="false" layoutX="14.0" layoutY="192.0" prefHeight="25.0" prefWidth="115.0" />
+      <ComboBox fx:id="newaptStartTime" layoutX="139.0" layoutY="192.0" prefHeight="25.0" prefWidth="101.0" />
+      <ComboBox fx:id="newaptEndTime" layoutX="250.0" layoutY="192.0" prefHeight="25.0" prefWidth="101.0" />
+      <TextField fx:id="newaptContact" layoutX="15.0" layoutY="246.0" prefHeight="25.0" prefWidth="334.0" />
+      <TextField fx:id="newaptUrl" layoutX="17.0" layoutY="303.0" prefHeight="25.0" prefWidth="334.0" />
+      <TextField fx:id="newaptTitle" layoutX="16.0" layoutY="360.0" prefHeight="25.0" prefWidth="334.0" />
+      <TextArea fx:id="newaptDescription" layoutX="17.0" layoutY="414.0" prefHeight="75.0" prefWidth="334.0" />
+      <Button layoutX="22.0" layoutY="504.0" mnemonicParsing="false" onAction="#newAptSave" prefHeight="43.0" prefWidth="115.0" text="Save">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="223.0" layoutY="504.0" mnemonicParsing="false" onAction="#newAptCancel" prefHeight="43.0" prefWidth="123.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="16.0" layoutY="339.0" prefHeight="21.0" prefWidth="101.0" text="Title">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="MULTIPLY" height="50.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="364.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1879d3" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+   </children>
+</AnchorPane>
